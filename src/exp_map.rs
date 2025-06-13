@@ -25,7 +25,7 @@ impl ExpMap {
 
         self.requests.entry(key).and_modify(|entry| {;
             if now - entry.timestamp > EXPIRY_TIME.into() {
-                entry.count = 0;
+                entry.count = 1;
                 entry.timestamp = now;
             } else {
                 entry.count += 1;
