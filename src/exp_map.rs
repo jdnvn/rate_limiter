@@ -3,7 +3,7 @@ extern crate chrono;
 use chrono::prelude::*;
 
 pub struct ExpMap {
-    pub requests: HashMap<String, Entry>
+    requests: HashMap<String, Entry>
 }
 
 struct Entry {

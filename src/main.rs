@@ -2,7 +2,6 @@ mod exp_map;
 
 use std::io::{Read, Write};
 use std::net::{TcpListener, TcpStream};
-use std::collections::HashMap;
 use crate::exp_map::ExpMap;
 
 const UPSTREAM_HOST: &str = "127.0.0.1:8082";
